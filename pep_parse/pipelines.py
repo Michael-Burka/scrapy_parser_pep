@@ -1,7 +1,6 @@
 import csv
 import logging
 import os
-import re
 from collections import defaultdict
 from datetime import datetime as dt
 
@@ -37,9 +36,6 @@ class PepParsePipeline:
         Returns:
             dict: The processed item.
         """
-        # Remove the prefix "PEP XXX –" from the name
-        item["name"] = re.sub(r"^PEP \d+ – ", "", item["name"])
-
         self.status_counter[item["status"]] += 1
         return item
 
@@ -51,8 +47,9 @@ class PepParsePipeline:
         """
         timestamp = dt.now().strftime(FILENAME_DATETIME_FORMAT)
         file_path = os.path.join(
-            self.output_results_dir, f"status_summary_{timestamp}.csv"
-        )
+            self.output_results_dir, f"status_summary_{timestamp}.csv")
+
+        self.status_counter["Total"] = sum(self.status_counter.values())
 
         try:
             with open(file_path, "w", encoding="utf-8") as file:
@@ -60,8 +57,9 @@ class PepParsePipeline:
                     file, dialect=csv.unix_dialect(), quoting=csv.QUOTE_MINIMAL
                 )
                 writer.writerow(["Status", "Count"])
-                writer.writerows(self.status_counter.items())
-                writer.writerow(["Total", sum(self.status_counter.values())])
+                for status, count in self.status_counter.items():
+                    writer.writerow([status, count])
+
             logging.info(f"Status summary written to {file_path}")
         except IOError as e:
             spider.logger.error(f"Error writing CSV file: {e}")

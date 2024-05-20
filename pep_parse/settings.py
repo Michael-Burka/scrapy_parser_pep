@@ -5,6 +5,11 @@ BOT_NAME = 'pep_parse'
 NEWSPIDER_MODULE = 'pep_parse.spiders'
 SPIDER_MODULES = [NEWSPIDER_MODULE]
 
+# PEP Spider settings
+PEP_SPIDER_NAME = "pep"
+PEP_ALLOWED_DOMAINS = ["peps.python.org"]
+PEP_START_URLS = [f"https://{domain}/" for domain in PEP_ALLOWED_DOMAINS]
+
 # Crawler settings
 ROBOTSTXT_OBEY = True
 
