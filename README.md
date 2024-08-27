@@ -89,17 +89,6 @@ When using this parser, it is crucial to:
 
 Contributions are welcome! Whether you're fixing bugs, improving the documentation, or suggesting new features, your input is valuable. Please feel free to submit pull requests or open issues on the GitHub repository.
 
-## Feedback and Contact
-
-If you have suggestions, inquiries, or just wish to discuss any aspect of this project:
-
-- **Name**: Michael Burka 
-- **Email**: [contact@michaelburka.com](mailto:contact@michaelburka.com) 
-- **GitHub**: [Michael-Burka's GitHub Profile](https://github.com/Michael-Burka/) 
-- **LinkedIn**: [Michael-Burka's LinkedIn Profile](https://www.linkedin.com/in/michael-burka-485832251/) 
-
----
-
 ### Files Overview
 
 1. **pep.py**: Contains the spider logic for scraping PEP data.
@@ -108,3 +97,14 @@ If you have suggestions, inquiries, or just wish to discuss any aspect of this p
 4. **items.py**: Defines the data structure for scraped items.
 
 By following these guidelines, you can efficiently use and contribute to the PEP Parser project.
+
+---
+
+## Feedback and Contact
+
+If you have suggestions, inquiries, or just wish to discuss any aspect of this project:
+
+- **Name**: Michael Burka 
+- **Email**: [contact@michaelburka.com](mailto:contact@michaelburka.com) 
+- **GitHub**: [Michael-Burka's GitHub Profile](https://github.com/Michael-Burka/) 
+- **LinkedIn**: [Michael-Burka's LinkedIn Profile](https://www.linkedin.com/in/michael-burka-485832251/) 
