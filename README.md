@@ -96,8 +96,6 @@ Contributions are welcome! Whether you're fixing bugs, improving the documentati
 3. **settings.py**: Configuration file for Scrapy settings.
 4. **items.py**: Defines the data structure for scraped items.
 
-By following these guidelines, you can efficiently use and contribute to the PEP Parser project.
-
 ---
 
 ## Feedback and Contact
@@ -107,4 +105,6 @@ If you have suggestions, inquiries, or just wish to discuss any aspect of this p
 - **Name**: Michael Burka 
 - **Email**: [contact@michaelburka.com](mailto:contact@michaelburka.com) 
 - **GitHub**: [Michael-Burka's GitHub Profile](https://github.com/Michael-Burka/) 
-- **LinkedIn**: [Michael-Burka's LinkedIn Profile](https://www.linkedin.com/in/michael-burka-485832251/) 
+- **LinkedIn**: [Michael-Burka's LinkedIn Profile](https://www.linkedin.com/in/michael-burka-485832251/)
+
+By following these guidelines, you can efficiently use and contribute to the PEP Parser project.
